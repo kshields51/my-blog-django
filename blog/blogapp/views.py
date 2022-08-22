@@ -18,5 +18,4 @@ def detail(request):
 
 def post(request):
     post_object = Post.objects.filter(title="Tasty Beef Quesadilla from Cilantro Taqueria").get()
-    
     return render(request, 'blogapp/post.html', {'post': post_object})

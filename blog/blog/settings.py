@@ -41,6 +41,10 @@ INSTALLED_APPS = [
 
 ]
 
+STATICFILES_FINDERS =  [
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
